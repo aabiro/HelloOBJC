@@ -2,7 +2,7 @@
 //  ViewController.m
 //  HelloOBJC
 //
-//  Created by Maureen Biro on 2017-06-20.
+//  Created by Aaryn Biro on 2017-06-20.
 //  Copyright © 2017 Aaryn Biro. All rights reserved.
 //
 
@@ -25,5 +25,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickBait:(id)sender {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"WELCOME" message:@"Welcome to the world of Objective-C"   preferredStyle: UIAlertControllerStyleAlert  ];
+    UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"CLOSE" style:UIAlertActionStyleCancel handler:nil];
+    
+    //add action to alert
+    [alert addAction:closeAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
 
 @end
